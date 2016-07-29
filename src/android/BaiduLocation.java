@@ -178,9 +178,9 @@ public class BaiduLocation extends CordovaPlugin {
         // 可选，默认gcj02，设置返回的定位结果坐标系 bd09 bd09ll gcj02
         option.setCoorType("gcj02");
         // 可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的
-        // option.setScanSpan(0);
+        option.setScanSpan(3000);
         // 可选，设置是否需要地址信息，默认不需要
-        // option.setIsNeedAddress(false);
+        option.setIsNeedAddress(true);
         // 可选，默认false,设置是否使用gps
         option.setOpenGps(true);
         // 可选，默认false，设置是否当gps有效时按照1S1次频率输出GPS结果
